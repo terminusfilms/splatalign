@@ -132,6 +132,17 @@ Creates `dist/SplatAlign.app` (macOS) or `dist/SplatAlign.exe` (Windows).
 - **Before/after** — Renovations, events, environmental change
 - **Multi-capture fusion** — Combine overlapping scans from different sessions
 
+## Next Steps: Build a Viewer
+
+Once you have your aligned splats, use the **[Splat Time Toggle Template](https://github.com/terminusfilms/splat-time-toggle-template)** to build an interactive web viewer:
+
+1. Clone the template
+2. Add your LOD-converted splats
+3. Paste your `matrix_column_major_flat` into `config.js`
+4. `npm run dev`
+
+The template includes WASD navigation, mobile support, time toggle UI, and optional collision.
+
 ## Credits
 
 Developed by [Steve Bransford](https://github.com/stevebransford) at [Emory Center for Digital Scholarship](https://ecds.emory.edu).
