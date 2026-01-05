@@ -24,7 +24,7 @@ Many 3DGS viewers (like Virtual Tour Pro, basic web viewers) can't apply runtime
 **Requirements:** Python 3.8+
 
 ```bash
-git clone https://github.com/stevebransford/splatalign.git
+git clone https://github.com/terminusfilms/splatalign.git
 cd splatalign
 python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -145,7 +145,7 @@ The template includes WASD navigation, mobile support, time toggle UI, and optio
 
 ## Credits
 
-Developed by [Steve Bransford](https://github.com/stevebransford) at [Emory Center for Digital Scholarship](https://ecds.emory.edu).
+Developed by [Steve Bransford](https://github.com/terminusfilms) at [Emory Center for Digital Scholarship](https://ecds.emory.edu).
 
 Part of the [Atlanta Space Machine](https://atlantaspacemachine.com) project — aerial-to-ground 3DGS exploration of Atlanta landmarks.
 
