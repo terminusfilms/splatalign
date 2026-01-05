@@ -2,22 +2,25 @@
 
 **ICP alignment for 3D Gaussian Splatting temporal captures.**
 
-Align two 3DGS scans of the same location taken at different times. Perfect for time-toggle visualizations, before/after comparisons, and seasonal change documentation.
+Align two 3DGS scans of the same location taken at different times. Get a **4x4 transform matrix** to use in your own code, or export an aligned PLY with the transform baked in.
 
 <!-- TODO: Add screenshot showing GUI or before/after alignment -->
+
+## Output
+
+- **4x4 Transform Matrix** — Column-major (WebGL/Three.js/PlayCanvas) and row-major (numpy) formats
+- **Aligned PLY** *(optional)* — Transform baked into vertex data for viewers that can't apply runtime transforms
 
 ## Features
 
 - **Multi-scale ICP** — 4-stage alignment (5m → 1m → 0.3m → 0.1m) handles large initial offsets
 - **~5cm accuracy** — Median alignment error suitable for seamless time-toggle switching
 - **Ground filtering** — Excludes seasonal vegetation (trees, grass) for stable structural alignment
-- **Baked PLY export** — Transform baked directly into vertex data, works with *any* viewer
-- **Transform matrices** — Column-major (WebGL/PlayCanvas) and row-major (numpy) formats
 - **GUI + CLI** — PyQt6 interface or command-line automation
 
 ## Why Baked PLY?
 
-Many 3DGS viewers (like Virtual Tour Pro, basic web viewers) can't apply runtime transforms. SplatAlign solves this by **baking the alignment directly into the PLY file** — positions and rotations are transformed, all other properties preserved. Load the aligned PLY alongside your primary scan in any viewer.
+Some 3DGS viewers (like Virtual Tour Pro) can't apply runtime transforms. The optional baked PLY export solves this — positions and rotations are transformed, all other properties preserved. Load the aligned PLY alongside your primary scan in any viewer.
 
 ## Installation
 
