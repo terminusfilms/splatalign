@@ -145,7 +145,7 @@ The template includes WASD navigation, mobile support, time toggle UI, and optio
 
 ## Credits
 
-Developed by [Steve Bransford](https://github.com/terminusfilms) at [Emory Center for Digital Scholarship](https://ecds.emory.edu).
+Developed by [Steve Bransford](https://github.com/terminusfilms).
 
 Part of the [Atlanta Space Machine](https://atlantaspacemachine.com) project — aerial-to-ground 3DGS exploration of Atlanta landmarks.
 
