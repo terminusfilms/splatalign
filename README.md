@@ -2,15 +2,9 @@
 
 **ICP alignment for 3D Gaussian Splatting temporal captures.**
 
+**[Download Mac App](https://github.com/terminusfilms/splatalign/releases/latest)** | Windows coming soon | [Python install](#installation)
+
 Align two 3DGS scans of the same location taken at different times. Get a **4x4 transform matrix** to use in your own code, or export an aligned PLY with the transform baked in.
-
-## Download
-
-| Platform | Link |
-|----------|------|
-| **Mac** | [SplatAlign-mac.zip](https://github.com/terminusfilms/splatalign/releases/latest) *(unsigned — right-click → Open)* |
-| **Windows** | Coming soon |
-| **Python** | See [Installation](#installation) below |
 
 <!-- TODO: Add screenshot showing GUI or before/after alignment -->
 
