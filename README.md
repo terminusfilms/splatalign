@@ -6,7 +6,7 @@
 
 Align two 3DGS scans of the same location taken at different times. Get a **4x4 transform matrix** to use in your own code, or export an aligned PLY with the transform baked in.
 
-<!-- TODO: Add screenshot showing GUI or before/after alignment -->
+![SplatAlign GUI](screenshot.png)
 
 ## Output
 
@@ -147,6 +147,13 @@ Once you have your aligned splats, use the **[Splat Time Toggle Template](https:
 4. `npm run dev`
 
 The template includes WASD navigation, mobile support, time toggle UI, and optional collision.
+
+### Memory Considerations
+
+Displaying multiple aligned splats simultaneously (for toggling or comparison) requires loading all splats into GPU memory. For large captures:
+
+- **LOD streaming** (recommended) — Convert splats to hierarchical LOD format using [@playcanvas/splat-transform](https://www.npmjs.com/package/@playcanvas/splat-transform). Only visible detail levels load, enabling multi-gigabyte scenes on standard hardware.
+- **Compressed splats** — Formats like SOG (Sorted Gaussians) can reduce file sizes significantly, making multiple smaller splats feasible without LOD. Best for compact scenes under ~10M gaussians each.
 
 ## Credits
 
